@@ -1,11 +1,12 @@
 plot2 <- function(){
-        ## Aim of this function is to 
-        ## 1. read the household_power_consumption.txt file
-        ## 2. subset for data taken from 2 days: 2007-02-01 and 2007-02-02
-        ## 3. generate a plot of global active power vs. time
-        
-        ## Parameters: none
-        ## Assumes household_power_consumption.txt file located in working dir
+       # Purpose of this function:
+# 1. Load data from the 'household_power_consumption.txt' file.
+# 2. Extract data for two specific days: 2007-02-01 and 2007-02-02.
+# 3. Generate four plots collectively displaying Global Active Power, Voltage, Energy Sub Metering, and Global Reactive Power over time.
+  
+# Parameters: None
+# Assumes the 'household_power_consumption.txt' file is present in the working directory.
+
         
         ## read data
         powerdata <- read.table("./household_power_consumption.txt", stringsAsFactors = FALSE, header = TRUE, sep =";"  )
